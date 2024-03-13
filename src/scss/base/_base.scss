@@ -7,3 +7,11 @@ body {
 	color: var(--text-color);
     font-family: var(--font-main);
 }
+
+a {
+	color: var(--color-text);
+}
+
+.mob-menu--active {
+	display: none;
+}

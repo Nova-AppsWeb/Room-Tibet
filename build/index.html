@@ -5,31 +5,97 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/stylesheet.css">
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="../output.css">
+		<link rel="stylesheet" href="../css/output.css">
 	</head>
 	<body>
-		<h1 class="text-3xl font-bold underline">
-			Hello world!
-		  </h1>
 		<header class="header">
     <div class="container">
         <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
+            <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+            <nav class="header__list-wrapper">
+                <ul class="header__list">
+                    <li><a class="header__list-item" href="#">Главная</a></li>
+                    <li><a class="header__list-item" href="#">Про гида</a></li>
+                    <li><a class="header__list-item" href="#">Программа тура</a></li>
+                    <li><a class="header__list-item" href="#">Стоимость</a></li>
+                    <li><a class="header__list-item" href="#">Блог</a></li>
+                    <li><a class="header__list-item" href="#">Контакты</a></li>
+                </ul>
+                <button class="header__btn">Консультация</button>
+            </nav>
+            <button class="mob-burger"><img src="img/mob-btn.svg" alt="mob-menu"></button>
         </div>
+        <div class="hero">
+    <h1 class="hero__h1">Насладись прогулкой в горах
+        с командой единомышленников</h1>
+</div>
+<div class="hero__navigation">
+    <div class="hero__wrapper">
+        <form class="hero__form" action="">
+            <div class="hero__select">
+                <select class="hero__input" name="city" id="city-select">
+                    <option class="hero__option" value=""><span>Локация для тура</span> </option>
+                    <option class="hero__option" value="vladikavkaz">Владткавказ</option>
+                    <option class="hero__option" value="sochi">Сочи</option>
+                    <option class="hero__option" value="adygeya">Адыгея</option>
+                </select>
+                <label class="hero__lable" for="">Выберите из списка</label>
+            </div>
+            <div class="hero__date-wrapper">
+                <div class="hero__date">
+                    <input class="hero__input-date-one" type="date">
+                    <span class="date-button">
+                        <button class="date-button__icon-date" type="button">
+                            <img src="img/date-icon.svg" alt="">
+                        </button>
+                      </span>
+                    <input class="hero__input-date-two" type="date">
+                    <span class="date-button">
+                        <button class="date-button__icon-date" type="button">
+                            <img src="img/date-icon.svg" alt="">
+                        </button>
+                      </span>
+                </div>
+                <label class="hero__lable" for="">Выберите из списка</label>
+            </div>
+            <div class="hero__select">
+                <select class="hero__input" name="user" id="user-select">
+                    <option class="hero__option" value=""><span>Участники</span> </option>
+                    <option class="hero__option" value="vladikavkaz">4</option>
+                    <option class="hero__option" value="sochi">5</option>
+                    <option class="hero__option" value="adygeya">6</option>
+                    <option class="hero__option" value="adygeya">7</option>
+                    <option class="hero__option" value="adygeya">8</option>
+                </select>
+                <label class="hero__lable" for="">Минимум 4 человека</label>
+            </div>
+            <button class="hero__btn" type="submit">Найти программу</button>
+        </form>
+    </div>
+</div>
+
+<div class="container-block">
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+</div>
+
     </div>
 </header>
-<div class="mobile-nav">
+<div class="mobile-nav mob-menu">
 	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
+		<li><a class="mob-list" href="#" ><img src="../img/mob-icon.svg" alt="">Про гида</a></li>
+		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Программа тура</a></li>
+		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Стоимость</a></li>
+		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Блог</a></li>
+		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Контакты</a></li>
 	</ul>
+	<button class="close">x</button>
 </div>
 
 		<footer class="footer">

@@ -11,17 +11,16 @@
 	--color: #000;
 	--radius: 4px;
 
-	/* Fixed height and width */
-	/* height: var(--height); */
-	/* width: var(--width); */
-
-	/* Dynamic height and width */
 	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
 	width: var(--width);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: none;
+
+	@media (max-width: 1024px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
 }
 
 .nav-icon {
