@@ -1,0 +1,193 @@
+.card-popular {
+    width: 380px;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+        width: 285px;
+        height: 400px;
+     }
+    &__main {
+        position: absolute;
+        transform: translateY(-50%, -50%);
+        width: 380px;
+        height: 500px;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+            width: 285px;
+            height: 400px;
+         }
+    }
+    &__image {
+        width: 100%;
+    }
+    &__clue {
+        padding: 30px 32px 20px 32px;
+        border-radius: 32px;
+        backdrop-filter: blur(6px);
+        background: rgba(255, 255, 255, 0.2);
+        top: 0;
+        left: 100%;
+        color: white;
+        @media (max-width: 1024px) {
+            padding: 22px 26px 14px 26px;
+            border-radius: 25px;
+         }
+    }
+    &__img-one {
+        position: absolute;
+        top: 50px;
+        left: 315px;
+        @media (max-width: 1024px) {
+            top: 46px;
+            left: 224px;
+            width: 61px;
+         }
+    }
+    &__info-clue {
+        width: 316px;
+        position: absolute;
+        top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1024px) {
+            width: 244px;
+         }
+    }
+    &__row {
+        width: 100%;;
+        position: absolute;
+        top: 410px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 32px 23px 32px;
+        border-radius: 0px 0px 32px 32px;
+        backdrop-filter: blur(6px);
+        background: rgba(255, 255, 255, 0.2);
+        @media (max-width: 1024px) {
+            top: 304px;
+            padding: 20px 24px;
+         }
+    }
+    &__wrapper {
+        font-family: var(--font-main);
+        color: rgb(253, 253, 253);
+    }
+    &__wrapper-clue {
+        font-family: var(--font-main);
+        color: rgb(253, 253, 253);
+    }
+    &__h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+        @media (max-width: 1024px) {
+           font-size: 18px;
+         }
+    }
+    &__h4-clue {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+        @media (max-width: 1024px) {
+            font-size: 18px;
+          }
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        @media (max-width: 1024px) {
+            display: none;
+          }
+    }
+    &__subtitle-clue {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        @media (max-width: 1024px) {
+            font-size: 10px;
+          }
+    }
+    &__prise {
+        max-width: 86px;
+        font-family: var(--font-main);
+        color: rgb(253, 253, 253);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.3);
+        @media (max-width: 1024px) {
+            max-width: 82px;
+            font-size: 16px;
+            padding: 6px 12px;
+          }
+    }
+    &__prise-clue {
+        max-width: 86px;
+        font-family: var(--font-main);
+        color: rgb(253, 253, 253);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.3);
+        @media (max-width: 1024px) {
+            max-width: 82px;
+            font-size: 16px;
+            padding: 6px 12px;
+          }
+    }
+    &__text {
+        position: absolute;
+        top: 115px;
+        max-width: 316px;
+        @media (max-width: 1024px) {
+            top: 90px;
+            font-size: 14px;
+            max-width: 244px;
+          }
+    }
+    &__btn {
+        position: absolute;
+        top: 436px;
+        max-width: 176px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+.card-popular__image, .card-popular__clue {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    transition: 0.8s;
+}
+
+.card-popular__main:hover .card-popular__clue {
+    top: 0;
+    left: 0;
+}
+
+.card-popular__main:hover .card-popular__img-one {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.card-popular__main:hover .card-popular__row {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.card-popular__btn {
+    @media (max-width: 1024px) {
+        font-size: 10px;
+        top: 300px;
+        padding: 14px 20px;
+      }
+}

@@ -1,0 +1,93 @@
+.card-blog {
+    padding: 16px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(253, 253, 253);
+    cursor: pointer;
+    @media (max-width: 1240px) {
+        gap: 20px;
+        padding: 12px;
+        max-width: 498px;
+     }
+    @media (max-width: 1024px) {
+        padding: 0;
+        max-width: 285px;
+        flex-direction: column;
+        gap: 0;
+        margin: 0 auto;
+     }
+    &__img {
+        @media (max-width: 1024px) {
+            width: 285px;
+         }
+    }
+    &__info {
+        max-width: 294px;
+        font-family: var(--font-main);
+        color: rgb(24, 18, 30);
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        @media (max-width: 1240px) {
+            max-width: 346px;
+         }
+        @media (max-width: 1024px) {
+            height: 200px;
+            padding: 16px;
+            gap: 16px;
+        }
+    }
+    &__h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        transition: 0.8s;
+        &:hover {
+            color: rgb(26, 62, 62);
+            text-decoration-line: underline;
+        }
+        @media (max-width: 1240px) {
+            font-size: 16px;
+         }
+        @media (max-width: 1024px) {
+            font-size: 20px;
+         }
+    }
+    &__text {
+        height: 116px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            height: 80px;
+            overflow: hidden;
+         }
+    }
+    &__text-two {
+        overflow: hidden;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__date {
+        color: rgb(242, 190, 34);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__btn {
+        color: rgb(26, 62, 62);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        transition: 0.8s;
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+}

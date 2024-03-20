@@ -1,0 +1,43 @@
+.content-popular {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @media (max-width: 1024px) {
+        padding: 50px 0;
+        gap: 32px;
+     }
+    &__subtitle {
+        text-align: center;
+    }
+    &__cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__btn {
+        display: none;
+        max-width: 220px;
+        padding: 12px 24px;
+        border-radius: 4px;
+        background: rgb(26, 62, 62);
+        color: rgb(253, 253, 253);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        transition: 0.8s;
+        &:hover {
+        box-sizing: border-box;
+        border: 1px solid rgb(26, 62, 62);
+        border-radius: 4px;
+        background: rgb(253, 253, 253);
+        color: rgb(26, 62, 62);
+        }
+        @media (max-width: 1024px) {
+            display: block;
+         }
+    }
+}

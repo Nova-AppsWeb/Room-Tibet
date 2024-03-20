@@ -178,11 +178,9 @@
         }
         @media (max-width: 1240px) {
             padding: 14px 34px;
-            font-size: 14px;
         }
         @media (max-width: 1100px) {
             padding: 12px 32px;
-            font-size: 12px;
         }
     }
 }
@@ -226,14 +224,14 @@ input[type="date"]::after {
     }
 }
 
-// .container-block {
-//     display: flex;
-//     gap: 20px;
-// }
+.container-block {
+    display: flex;
+    gap: 20px;
+}
 
-// .block {
-//     width: 200px;
-//     height: 200px;
-//     background: red;
-// }
+.block {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
 

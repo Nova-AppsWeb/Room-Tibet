@@ -1,7 +1,13 @@
 function mousEvent () {
-    const block = document.querySelectorAll(".block")
-    block.addEventListener("mouseover", () => {
-        block.style.backgroundColor = "black";
-	  });
+    const mobLists = document.querySelectorAll('.mob-list');
+    for (const mobList of mobLists) {
+        mobList.addEventListener('mouseover', () => {
+            mobList.style.color = '#F2BE22';
+        });
+        
+        mobList.addEventListener('mouseout', () => {
+            mobList.style.color = '';
+        });
+    }
 }
 export default mousEvent;
