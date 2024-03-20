@@ -1,426 +1,597 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="fonts/stylesheet.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="fonts/stylesheet.css" />
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="../css/output.css">
+		<link rel="stylesheet" href="../css/output.css" />
 	</head>
 	<body>
 		<header class="header">
-    <div class="container">
-        <div class="header__row">
-            <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
-            <nav class="header__list-wrapper">
-                <ul class="header__list">
-                    <li><a class="header__list-item" href="#">Главная</a></li>
-                    <li><a class="header__list-item" href="#">Про гида</a></li>
-                    <li><a class="header__list-item" href="#">Программа тура</a></li>
-                    <li><a class="header__list-item" href="#">Стоимость</a></li>
-                    <li><a class="header__list-item" href="#">Блог</a></li>
-                    <li><a class="header__list-item" href="#">Контакты</a></li>
-                </ul>
-                <button class="header__btn">Консультация</button>
-            </nav>
-            <button class="mob-burger"><img src="img/mob-btn.svg" alt="mob-menu"></button>
-        </div>
-        <div class="hero">
-    <h1 class="hero__h1">Насладись прогулкой в горах
-        с командой единомышленников</h1>
-</div>
-<div class="hero__navigation">
-    <div class="hero__wrapper">
-        <form class="hero__form" action="">
-            <div class="hero__select">
-                <select class="hero__input" name="city" id="city-select">
-                    <option class="hero__option" value=""><span>Локация для тура</span> </option>
-                    <option class="hero__option" value="vladikavkaz">Владткавказ</option>
-                    <option class="hero__option" value="sochi">Сочи</option>
-                    <option class="hero__option" value="adygeya">Адыгея</option>
-                </select>
-                <label class="hero__lable" for="">выберите из списка</label>
-            </div>
-            <div class="hero__date-wrapper">
-                <div class="hero__date">
-                    <input class="hero__input-date-one" type="date">
-                    <span class="date-button">
-                        <button class="date-button__icon-date" type="button">
-                            <img src="img/date-icon.svg" alt="">
-                        </button>
-                      </span>
-                    <input class="hero__input-date-two" type="date">
-                    <span class="date-button">
-                        <button class="date-button__icon-date" type="button">
-                            <img src="img/date-icon.svg" alt="">
-                        </button>
-                      </span>
-                </div>
-                <label class="hero__lable" for="">укажите диапазон</label>
-            </div>
-            <div class="hero__select">
-                <select class="hero__input" name="user" id="user-select">
-                    <option class="hero__option" value=""><span>Участники</span> </option>
-                    <option class="hero__option" value="vladikavkaz">4</option>
-                    <option class="hero__option" value="sochi">5</option>
-                    <option class="hero__option" value="adygeya">6</option>
-                    <option class="hero__option" value="adygeya">7</option>
-                    <option class="hero__option" value="adygeya">8</option>
-                </select>
-                <label class="hero__lable" for="">минимум 4 человека</label>
-            </div>
-            <button class="hero__btn" type="submit">Найти программу</button>
-        </form>
-    </div>
-</div>
-
-
-
-    </div>
-</header>
-<div class="mobile-nav mob-menu">
-	<button class="close">x</button>
-	<ul class="mobile-nav__list">
-		<li><a class="mob-list" href="#" ><img src="../img/mob-icon.svg" alt="">Про гида</a></li>
-		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Программа тура</a></li>
-		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Стоимость</a></li>
-		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Блог</a></li>
-		<li><a class="mob-list" href="#!"><img src="img/mob-icon.svg" alt="">Контакты</a></li>
-	</ul>
-</div>
-
-		<section>
-    <div class="container">
-        <div class="content">
-            <div class="content__video-wrapper">
-                <img class="content__img" src="img/content-img.svg" alt="">
-                <div class="content__video-inner">
-                    <video class="content__video" src="img/videoSwitzerland.mp4" alt="video" controls></video>
-                    <button class="content__btn-play"><img src="img/icon-play.svg" alt=""></button>
-                </div>
-            </div>
-            <div class="content__text-wrapper">
-                <div class="content__h3-wrapper">
-                    <span class="content__subtitle">о нашем походе</span>
-                    <h3 class="content__h3">Исследуйте все горные массивы мира вместе с нами</h3>
-                </div>
-                <div class="content__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., 
-                    то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, 
-                    штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
-                     "consectetur"и занялся его поисками в классической латинской литературе.
-                    </div>
-                <button class="content__btn">Программа тура</button>
-            </div>
-        </div>
-    </div>
-</section>
-		<section class="section__content-program ">
-    <div class="container">
-        <div class="content-program">
-            <div class="content-program__info">
-                <div class="content__h3-wrapper">
-                    <span class="content__subtitle">наше предложение</span>
-                    <h3 class="content__h3">Лучшие программы для тебя</h3>
-                </div>
-                <div class="content__text">Его корни уходят в один фрагмент классической латыни 45 года н.э.,
-                     то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</div>
-                    <div class="content-program__program-wrapper">
-                        <img src="img/icon-program-gid.svg" alt="">
-                        <div class="content-program__program">
-                            <div class="content-program__program-h4">Опытный гид</div>
-                            <div class="content-program__program-text">Для современного мира базовый
-                                 вектор развития предполагает независимые способы 
-                                реализации соответствующих условий активизации.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-program__program-wrapper">
-                        <img src="img/icon-program-hike.svg" alt="">
-                        <div class="content-program__program">
-                            <div class="content-program__program-h4">Безопасный поход</div>
-                            <div class="content-program__program-text">Для современного мира базовый
-                                 вектор развития предполагает независимые способы
-                                  реализации соответствующих условий активизации.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-program__program-wrapper">
-                        <img src="img/icon-program-prise.svg" alt="">
-                        <div class="content-program__program">
-                            <div class="content-program__program-h4">Лояльные цены</div>
-                            <div class="content-program__program-text">Для современного мира базовый
-                                 вектор развития предполагает независимые способы
-                                  реализации соответствующих условий активизации.
-                            </div>
-                        </div>
-                    </div>
-                    <button class="content__btn content-program__btn">Стоимость программ</button>
-            </div>
-            <div class="content-program__img">
-                <img src="img/img-one.svg" alt="">
-                <img src="img/img-two.svg" alt="">
-                <img src="img/img-three.svg" alt="">
-                <img src="img/img-four.svg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-		<section>
-    <div class="container">
-        <div class="content-popular">
-            <div class="content__h3-wrapper">
-                <span class="content__subtitle content-popular__subtitle">по версии отдыхающих</span>
-                <h3 class="content__h3">Популярные направления</h3>
-            </div>
-            <div class="content-popular__cards">
-                <div class="card-popular">
-    <div class="card-popular__main">
-        <div class="card-popular__image">
-            <img src="img/card-popular-one.svg" alt="">
-        </div>
-        <div class="card-popular__info">
-            <div class="card-popular__row">
-                <div class="card-popular__wrapper">
-                    <div class="card-popular__h4">Озеро возле гор</div>
-                    <div class="card-popular__subtitle">романтическое приключение</div>
-                </div>
-                <div class="card-popular__prise">480 $</div>
-            </div>
-        </div>
-        <img class="card-popular__img-one" src="img/card-rating-one.svg" alt="">
-        <div class="card-popular__clue">
-            <div class="card-popular__info-clue">
-                <div class="card-popular__wrapper-clue">
-                    <div class="card-popular__h4-clue">Озеро возле гор</div>
-                    <div class="card-popular__subtitle-clue">романтическое приключение</div>
-                </div>
-                <div class="card-popular__prise-clue">480 $</div>
-            </div>
-            <div class="card-popular__text">
-                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
-                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
-                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
-                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-            </div>
-            <button class="content__btn card-popular__btn">Программа тура</button>
-        </div>
-    </div>
-</div>
-                <div class="card-popular">
-    <div class="card-popular__main">
-        <div class="card-popular__image">
-            <img src="img/card-popular-two.svg" alt="">
-        </div>
-        <div class="card-popular__info">
-            <div class="card-popular__row">
-                <div class="card-popular__wrapper">
-                    <div class="card-popular__h4">Ночь в горах</div>
-                    <div class="card-popular__subtitle">в компании друзей</div>
-                </div>
-                <div class="card-popular__prise">500 $</div>
-            </div>
-        </div>
-        <img class="card-popular__img-one" src="img/card-rating-two.svg" alt="">
-        <div class="card-popular__clue">
-            <div class="card-popular__info-clue">
-                <div class="card-popular__wrapper-clue">
-                    <div class="card-popular__h4-clue">Ночь в горах</div>
-                    <div class="card-popular__subtitle-clue">в компании друзей</div>
-                </div>
-                <div class="card-popular__prise-clue">500 $</div>
-            </div>
-            <div class="card-popular__text">
-                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
-                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
-                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
-                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-            </div>
-            <button class="content__btn card-popular__btn">Программа тура</button>
-        </div>
-    </div>
-</div>
-                <div class="card-popular">
-    <div class="card-popular__main">
-        <div class="card-popular__image">
-            <img src="img/card-popular-three.svg" alt="">
-        </div>
-        <div class="card-popular__info">
-            <div class="card-popular__row">
-                <div class="card-popular__wrapper">
-                    <div class="card-popular__h4">Йога в горах</div>
-                    <div class="card-popular__subtitle">для тех, кто забоится о себе</div>
-                </div>
-                <div class="card-popular__prise">230 $</div>
-            </div>
-        </div>
-        <img class="card-popular__img-one" src="img/card-rating-three.svg" alt="">
-        <div class="card-popular__clue">
-            <div class="card-popular__info-clue">
-                <div class="card-popular__wrapper-clue">
-                    <div class="card-popular__h4-clue">Йога в горах</div>
-                    <div class="card-popular__subtitle-clue">для тех, кто забоится о себе</div>
-                </div>
-                <div class="card-popular__prise-clue">230 $</div>
-            </div>
-            <div class="card-popular__text">
-                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
-                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
-                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
-                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-            </div>
-            <button class="content__btn card-popular__btn">Программа тура</button>
-        </div>
-    </div>
-</div>
-            </div>
-            <button class="content-popular__btn">Рейтинг направлений</button>
-        </div>
-    </div>
-</section>
-		<section class="section__content-program ">
-    <div class="container">
-        <div class="content-blog">
-            <div class="content__h3-wrapper">
-                <span class="content__subtitle content-blog__subtitle">делимся впечатлениями</span>
-                <h3 class="content__h3">Блог о путешествиях</h3>
-            </div>
-            <div class="content-blog__slider">
-	<div class="container-full">
-		<div class="sliders">
-			<div class="slider-row">
-				<div class="swiper mySwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-one.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Красивая Италия, какая она в реальности?</h3>
-        <div class="card-blog__text">Для современного мира базовый вектор развития 
-            предполагает независимые способы реализации соответствующих условий активизации.
-        </div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div></div>
-						<div class="swiper-slide"><div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-two.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Долой сомнения! Весь мир открыт для вас!</h3>
-        <div class="card-blog__text card-blog__text-two">Для современного мира базовый вектор развития предполагает независимые способы 
-            реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации
-             ...Для современного мира базовый вектор развития
-             предполагает независимые способы реализации соответствующих условий
-              активизации ... независимые способы реализации соответствующих условий активизации ...
-        </div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div></div>
-						<div class="swiper-slide"><div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-three.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Как подготовиться к путешествию в одиночку? </h3>
-        <div class="card-blog__text">Для современного мира базовый вектор развития предполагает.</div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div></div>
-                        <div class="swiper-slide"><div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-four.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Индия ... летим?</h3>
-        <div class="card-blog__text">Для современного мира базовый.</div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div></div>
+			<div class="container">
+				<div class="header__row">
+					<a class="header__logo" href="#"
+						><img src="img/logo.svg" alt="logo"
+					/></a>
+					<nav class="header__list-wrapper">
+						<ul class="header__list">
+							<li><a class="header__list-item" href="#">Главная</a></li>
+							<li><a class="header__list-item" href="#">Про гида</a></li>
+							<li><a class="header__list-item" href="#">Программа тура</a></li>
+							<li><a class="header__list-item" href="#">Стоимость</a></li>
+							<li><a class="header__list-item" href="#">Блог</a></li>
+							<li><a class="header__list-item" href="#">Контакты</a></li>
+						</ul>
+						<button class="header__btn">Консультация</button>
+					</nav>
+					<button class="mob-burger">
+						<img src="img/mob-btn.svg" alt="mob-menu" />
+					</button>
+				</div>
+				<div class="hero">
+					<h1 class="hero__h1">
+						Насладись прогулкой в горах с командой единомышленников
+					</h1>
+				</div>
+				<div class="hero__navigation">
+					<div class="hero__wrapper">
+						<form class="hero__form" action="">
+							<div class="hero__select">
+								<select class="hero__input" name="city" id="city-select">
+									<option class="hero__option" value="">
+										<span>Локация для тура</span>
+									</option>
+									<option class="hero__option" value="vladikavkaz">
+										Владткавказ
+									</option>
+									<option class="hero__option" value="sochi">Сочи</option>
+									<option class="hero__option" value="adygeya">Адыгея</option>
+								</select>
+								<label class="hero__lable" for="">выберите из списка</label>
+							</div>
+							<div class="hero__date-wrapper">
+								<div class="hero__date">
+									<input class="hero__input-date-one" type="date" />
+									<span class="date-button">
+										<button class="date-button__icon-date" type="button">
+											<img src="img/date-icon.svg" alt="" />
+										</button>
+									</span>
+									<input class="hero__input-date-two" type="date" />
+									<span class="date-button">
+										<button class="date-button__icon-date" type="button">
+											<img src="img/date-icon.svg" alt="" />
+										</button>
+									</span>
+								</div>
+								<label class="hero__lable" for="">укажите диапазон</label>
+							</div>
+							<div class="hero__select">
+								<select class="hero__input" name="user" id="user-select">
+									<option class="hero__option" value="">
+										<span>Участники</span>
+									</option>
+									<option class="hero__option" value="vladikavkaz">4</option>
+									<option class="hero__option" value="sochi">5</option>
+									<option class="hero__option" value="adygeya">6</option>
+									<option class="hero__option" value="adygeya">7</option>
+									<option class="hero__option" value="adygeya">8</option>
+								</select>
+								<label class="hero__lable" for="">минимум 4 человека</label>
+							</div>
+							<button class="hero__btn" type="submit">Найти программу</button>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="slider-control-wrapper">
-				<div class="slider-control">
-					<div class="button-prev button__slider"></div>
-					<div class="button-next button__slider"></div>
+		</header>
+		<div class="mobile-nav mob-menu">
+			<button class="close">x</button>
+			<ul class="mobile-nav__list">
+				<li>
+					<a class="mob-list" href="#"
+						><img src="../img/mob-icon.svg" alt="" />Про гида</a
+					>
+				</li>
+				<li>
+					<a class="mob-list" href="#!"
+						><img src="img/mob-icon.svg" alt="" />Программа тура</a
+					>
+				</li>
+				<li>
+					<a class="mob-list" href="#!"
+						><img src="img/mob-icon.svg" alt="" />Стоимость</a
+					>
+				</li>
+				<li>
+					<a class="mob-list" href="#!"
+						><img src="img/mob-icon.svg" alt="" />Блог</a
+					>
+				</li>
+				<li>
+					<a class="mob-list" href="#!"
+						><img src="img/mob-icon.svg" alt="" />Контакты</a
+					>
+				</li>
+			</ul>
+		</div>
+		<section>
+			<div class="container">
+				<div class="content">
+					<div class="content__video-wrapper">
+						<img class="content__img" src="img/content-img.svg" alt="" />
+						<div class="content__video-inner">
+							<!-- <video
+								class="content__video"
+								src="img/content-img.svg"
+								alt="video"
+								controls
+							></video> -->
+							<img class="content__img" src="img/content-img.svg" alt="" />
+							<!-- <button class="content__btn-play">
+								<img src="img/icon-play.svg" alt="" />
+							</button> -->
+							<a
+								href="https://www.youtube.com/watch?v=gwEIcIudXSg&ab_channel=varlamov"
+							>
+								<button class="btn-play content__btn-play">
+									<img class="content__img" src="img/play.svg" alt="" />
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="content__text-wrapper">
+						<div class="content__h3-wrapper">
+							<span class="content__subtitle">о нашем походе</span>
+							<h3 class="content__h3">
+								Исследуйте все горные массивы мира вместе с нами
+							</h3>
+						</div>
+						<div class="content__text">
+							Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+							то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+							латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+							самых странных слов в Lorem Ipsum, "consectetur"и занялся его
+							поисками в классической латинской литературе.
+						</div>
+						<button class="content__btn">Программа тура</button>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-            <div class="content-blog__cards">
-                <div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-one.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Красивая Италия, какая она в реальности?</h3>
-        <div class="card-blog__text">Для современного мира базовый вектор развития 
-            предполагает независимые способы реализации соответствующих условий активизации.
-        </div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div>
-                <div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-two.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Долой сомнения! Весь мир открыт для вас!</h3>
-        <div class="card-blog__text card-blog__text-two">Для современного мира базовый вектор развития предполагает независимые способы 
-            реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации
-             ...Для современного мира базовый вектор развития
-             предполагает независимые способы реализации соответствующих условий
-              активизации ... независимые способы реализации соответствующих условий активизации ...
-        </div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div>
-                <div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-three.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Как подготовиться к путешествию в одиночку? </h3>
-        <div class="card-blog__text">Для современного мира базовый вектор развития предполагает.</div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div>
-                <div class="card-blog">
-    <img class="card-blog__img" src="img/card-blog-four.svg" alt="">
-    <div class="card-blog__info">
-        <h3 class="card-blog__h3">Индия ... летим?</h3>
-        <div class="card-blog__text">Для современного мира базовый.</div>
-        <div class="card-blog__row">
-            <div class="card-blog__date">01/04/2023</div>
-            <button class="card-blog__btn">читать статью</button>
-        </div>
-    </div>
-</div>
-            </div>
-            <button class="content__btn content-blog__btn">Другие материалы</button>
-        </div>
-    </div>
-    <div class="container-block">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        </div>
-</section>
-		
+		</section>
+		<section class="section__content-program">
+			<div class="container">
+				<div class="content-program">
+					<div class="content-program__info">
+						<div class="content__h3-wrapper">
+							<span class="content__subtitle">наше предложение</span>
+							<h3 class="content__h3">Лучшие программы для тебя</h3>
+						</div>
+						<div class="content__text">
+							Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+							то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+							латыни из колледжа.
+						</div>
+						<div class="content-program__program-wrapper">
+							<img src="img/icon-program-gid.svg" alt="" />
+							<div class="content-program__program">
+								<div class="content-program__program-h4">Опытный гид</div>
+								<div class="content-program__program-text">
+									Для современного мира базовый вектор развития предполагает
+									независимые способы реализации соответствующих условий
+									активизации.
+								</div>
+							</div>
+						</div>
+						<div class="content-program__program-wrapper">
+							<img src="img/icon-program-hike.svg" alt="" />
+							<div class="content-program__program">
+								<div class="content-program__program-h4">Безопасный поход</div>
+								<div class="content-program__program-text">
+									Для современного мира базовый вектор развития предполагает
+									независимые способы реализации соответствующих условий
+									активизации.
+								</div>
+							</div>
+						</div>
+						<div class="content-program__program-wrapper">
+							<img src="img/icon-program-prise.svg" alt="" />
+							<div class="content-program__program">
+								<div class="content-program__program-h4">Лояльные цены</div>
+								<div class="content-program__program-text">
+									Для современного мира базовый вектор развития предполагает
+									независимые способы реализации соответствующих условий
+									активизации.
+								</div>
+							</div>
+						</div>
+						<button class="content__btn content-program__btn">
+							Стоимость программ
+						</button>
+					</div>
+					<div class="content-program__img">
+						//TODO переделать блок
+						<!-- <div class=" w-[250px] h-[250px] object-cover">
+                    <img src="img/img-one.svg" alt="">
+                </div> -->
+						<img src="img/img-two.svg" alt="" />
+						<img src="img/img-three.svg" alt="" />
+						<img src="img/img-four.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="content-popular">
+					<div class="content__h3-wrapper">
+						<span class="content__subtitle content-popular__subtitle"
+							>по версии отдыхающих</span
+						>
+						<h3 class="content__h3">Популярные направления</h3>
+					</div>
+					<div class="content-popular__cards">
+						<div class="card-popular">
+							<div class="card-popular__main">
+								<div class="card-popular__image">
+									<img src="img/card-popular-one.svg" alt="" />
+								</div>
+								<div class="card-popular__info">
+									<div class="card-popular__row">
+										<div class="card-popular__wrapper">
+											<div class="card-popular__h4">Озеро возле гор</div>
+											<div class="card-popular__subtitle">
+												романтическое приключение
+											</div>
+										</div>
+										<div class="card-popular__prise">480 $</div>
+									</div>
+								</div>
+								<img
+									class="card-popular__img-one"
+									src="img/card-rating-one.svg"
+									alt=""
+								/>
+								<div class="card-popular__clue">
+									<div class="card-popular__info-clue">
+										<div class="card-popular__wrapper-clue">
+											<div class="card-popular__h4-clue">Озеро возле гор</div>
+											<div class="card-popular__subtitle-clue">
+												романтическое приключение
+											</div>
+										</div>
+										<div class="card-popular__prise-clue">480 $</div>
+									</div>
+									<div class="card-popular__text">
+										Его корни уходят в один фрагмент классической латыни 45 года
+										н.э., то есть более двух тысячелетий назад. Ричард
+										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+										штат Вирджиния, взял одно из самых странных слов в Lorem
+										Ipsum, "consectetur"и занялся его поисками в классической
+										латинской литературе.
+									</div>
+									<button class="content__btn card-popular__btn">
+										Программа тура
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-popular">
+							<div class="card-popular__main">
+								<div class="card-popular__image">
+									<img src="img/card-popular-two.svg" alt="" />
+								</div>
+								<div class="card-popular__info">
+									<div class="card-popular__row">
+										<div class="card-popular__wrapper">
+											<div class="card-popular__h4">Ночь в горах</div>
+											<div class="card-popular__subtitle">
+												в компании друзей
+											</div>
+										</div>
+										<div class="card-popular__prise">500 $</div>
+									</div>
+								</div>
+								<img
+									class="card-popular__img-one"
+									src="img/card-rating-two.svg"
+									alt=""
+								/>
+								<div class="card-popular__clue">
+									<div class="card-popular__info-clue">
+										<div class="card-popular__wrapper-clue">
+											<div class="card-popular__h4-clue">Ночь в горах</div>
+											<div class="card-popular__subtitle-clue">
+												в компании друзей
+											</div>
+										</div>
+										<div class="card-popular__prise-clue">500 $</div>
+									</div>
+									<div class="card-popular__text">
+										Его корни уходят в один фрагмент классической латыни 45 года
+										н.э., то есть более двух тысячелетий назад. Ричард
+										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+										штат Вирджиния, взял одно из самых странных слов в Lorem
+										Ipsum, "consectetur"и занялся его поисками в классической
+										латинской литературе.
+									</div>
+									<button class="content__btn card-popular__btn">
+										Программа тура
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-popular">
+							<div class="card-popular__main">
+								<div class="card-popular__image">
+									<img src="img/card-popular-three.svg" alt="" />
+								</div>
+								<div class="card-popular__info">
+									<div class="card-popular__row">
+										<div class="card-popular__wrapper">
+											<div class="card-popular__h4">Йога в горах</div>
+											<div class="card-popular__subtitle">
+												для тех, кто забоится о себе
+											</div>
+										</div>
+										<div class="card-popular__prise">230 $</div>
+									</div>
+								</div>
+								<img
+									class="card-popular__img-one"
+									src="img/card-rating-three.svg"
+									alt=""
+								/>
+								<div class="card-popular__clue">
+									<div class="card-popular__info-clue">
+										<div class="card-popular__wrapper-clue">
+											<div class="card-popular__h4-clue">Йога в горах</div>
+											<div class="card-popular__subtitle-clue">
+												для тех, кто забоится о себе
+											</div>
+										</div>
+										<div class="card-popular__prise-clue">230 $</div>
+									</div>
+									<div class="card-popular__text">
+										Его корни уходят в один фрагмент классической латыни 45 года
+										н.э., то есть более двух тысячелетий назад. Ричард
+										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+										штат Вирджиния, взял одно из самых странных слов в Lorem
+										Ipsum, "consectetur"и занялся его поисками в классической
+										латинской литературе.
+									</div>
+									<button class="content__btn card-popular__btn">
+										Программа тура
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="content-popular__btn">Рейтинг направлений</button>
+				</div>
+			</div>
+		</section>
+		<section class="section__content-program">
+			<div class="container">
+				<div class="content-blog">
+					<div class="content__h3-wrapper">
+						<span class="content__subtitle content-blog__subtitle"
+							>делимся впечатлениями</span
+						>
+						<h3 class="content__h3">Блог о путешествиях</h3>
+					</div>
+					<div class="content-blog__slider">
+						<div class="container-full">
+							<div class="sliders">
+								<div class="slider-row">
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="card-blog">
+													<img
+														class="card-blog__img"
+														src="img/card-blog-one.svg"
+														alt=""
+													/>
+													<div class="card-blog__info">
+														<h3 class="card-blog__h3">
+															Красивая Италия, какая она в реальности?
+														</h3>
+														<div class="card-blog__text">
+															Для современного мира базовый вектор развития
+															предполагает независимые способы реализации
+															соответствующих условий активизации.
+														</div>
+														<div class="card-blog__row">
+															<div class="card-blog__date">01/04/2023</div>
+															<button class="card-blog__btn">
+																читать статью
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="card-blog">
+													<img
+														class="card-blog__img"
+														src="img/card-blog-two.svg"
+														alt=""
+													/>
+													<div class="card-blog__info">
+														<h3 class="card-blog__h3">
+															Долой сомнения! Весь мир открыт для вас!
+														</h3>
+														<div class="card-blog__text card-blog__text-two">
+															Для современного мира базовый вектор развития
+															предполагает независимые способы реализации
+															соответствующих условий активизации ...
+															независимые способы реализации соответствующих
+															условий активизации ...Для современного мира
+															базовый вектор развития предполагает независимые
+															способы реализации соответствующих условий
+															активизации ... независимые способы реализации
+															соответствующих условий активизации ...
+														</div>
+														<div class="card-blog__row">
+															<div class="card-blog__date">01/04/2023</div>
+															<button class="card-blog__btn">
+																читать статью
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="card-blog">
+													<img
+														class="card-blog__img"
+														src="img/card-blog-three.svg"
+														alt=""
+													/>
+													<div class="card-blog__info">
+														<h3 class="card-blog__h3">
+															Как подготовиться к путешествию в одиночку?
+														</h3>
+														<div class="card-blog__text">
+															Для современного мира базовый вектор развития
+															предполагает.
+														</div>
+														<div class="card-blog__row">
+															<div class="card-blog__date">01/04/2023</div>
+															<button class="card-blog__btn">
+																читать статью
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="card-blog">
+													<img
+														class="card-blog__img"
+														src="img/card-blog-four.svg"
+														alt=""
+													/>
+													<div class="card-blog__info">
+														<h3 class="card-blog__h3">Индия ... летим?</h3>
+														<div class="card-blog__text">
+															Для современного мира базовый.
+														</div>
+														<div class="card-blog__row">
+															<div class="card-blog__date">01/04/2023</div>
+															<button class="card-blog__btn">
+																читать статью
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-control-wrapper">
+									<div class="slider-control">
+										<div class="button-prev button__slider"></div>
+										<div class="button-next button__slider"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-blog__cards">
+						<div class="card-blog">
+							<img class="card-blog__img" src="img/card-blog-one.svg" alt="" />
+							<div class="card-blog__info">
+								<h3 class="card-blog__h3">
+									Красивая Италия, какая она в реальности?
+								</h3>
+								<div class="card-blog__text">
+									Для современного мира базовый вектор развития предполагает
+									независимые способы реализации соответствующих условий
+									активизации.
+								</div>
+								<div class="card-blog__row">
+									<div class="card-blog__date">01/04/2023</div>
+									<button class="card-blog__btn">читать статью</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-blog">
+							<img class="card-blog__img" src="img/card-blog-two.svg" alt="" />
+							<div class="card-blog__info">
+								<h3 class="card-blog__h3">
+									Долой сомнения! Весь мир открыт для вас!
+								</h3>
+								<div class="card-blog__text card-blog__text-two">
+									Для современного мира базовый вектор развития предполагает
+									независимые способы реализации соответствующих условий
+									активизации ... независимые способы реализации соответствующих
+									условий активизации ...Для современного мира базовый вектор
+									развития предполагает независимые способы реализации
+									соответствующих условий активизации ... независимые способы
+									реализации соответствующих условий активизации ...
+								</div>
+								<div class="card-blog__row">
+									<div class="card-blog__date">01/04/2023</div>
+									<button class="card-blog__btn">читать статью</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-blog">
+							<img
+								class="card-blog__img"
+								src="img/card-blog-three.svg"
+								alt=""
+							/>
+							<div class="card-blog__info">
+								<h3 class="card-blog__h3">
+									Как подготовиться к путешествию в одиночку?
+								</h3>
+								<div class="card-blog__text">
+									Для современного мира базовый вектор развития предполагает.
+								</div>
+								<div class="card-blog__row">
+									<div class="card-blog__date">01/04/2023</div>
+									<button class="card-blog__btn">читать статью</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-blog">
+							<img class="card-blog__img" src="img/card-blog-four.svg" alt="" />
+							<div class="card-blog__info">
+								<h3 class="card-blog__h3">Индия ... летим?</h3>
+								<div class="card-blog__text">
+									Для современного мира базовый.
+								</div>
+								<div class="card-blog__row">
+									<div class="card-blog__date">01/04/2023</div>
+									<button class="card-blog__btn">читать статью</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="content__btn content-blog__btn">
+						Другие материалы
+					</button>
+				</div>
+			</div>
+			<div class="container-block">
+				<div class="block"></div>
+				<div class="block"></div>
+				<div class="block"></div>
+			</div>
+		</section>
+
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

@@ -1,93 +1,107 @@
 .content {
-    max-width: 1180px;
-    height: 526px;
-    display: flex;
-    gap: 120px;
-    margin: 100px 0;
-    font-family: var(--font-main);
-    &__video-wrapper {
-        width: 480px;
-        position: relative;
-    }
-    &__img {
-        max-width: 350px;
-    }
-    &__video-inner {
-        position: absolute;
-        top: 126px;
-        left: 130px;
-    }
-    &__video {
-        max-width: 350px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 24px;
-    }
-    &__btn-play {
-        position: absolute;
-        top: 45%;
-        left: 44%;
-    }
-    &__text-wrapper {
-        max-width: 580px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px;
-    }
-    &__h3-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    &__subtitle {
-        color: rgb(242, 190, 34);
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 20px;
-        @media (max-width: 1024px) {
-            font-size: 16px;
-            text-align: center;
-         }
-    }
-    &__h3 {
-        color: rgb(24, 18, 30);
-        font-size: 32px;
-        font-weight: 800;
-        line-height: 120%;
-        @media (max-width: 1024px) {
-            font-size: 24px;
-         }
-    }
-    &__text {
-        color: rgb(24, 18, 30);
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 150%;
-        @media (max-width: 1024px) {
-            font-size: 16px;
-         }
-    }
-    &__btn {
-        max-width: 200px;
-        padding: 16px 36px;
-        border-radius: 4px;
-        background: rgb(26, 62, 62);
-        color: rgb(253, 253, 253);
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-        transition: 0.8s;
-        &:hover {
-        box-sizing: border-box;
-        border: 1px solid rgb(26, 62, 62);
-        border-radius: 4px;
-        background: rgb(253, 253, 253);
-        color: rgb(26, 62, 62);
-        }
-            @media (max-width: 1024px) {
-                top: 310px;
-                padding: 14px 20px;
-              }
-    }
+	max-width: 1180px;
+	height: 526px;
+	display: flex;
+	gap: 120px;
+	margin: 100px 0;
+	font-family: var(--font-main);
+	&__video-wrapper {
+		width: 480px;
+		position: relative;
+	}
+	&__img {
+		max-width: 350px;
+	}
+	&__video-inner {
+		position: absolute;
+		top: 126px;
+		left: 130px;
+	}
+	&__video {
+		max-width: 350px;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 24px;
+	}
+	&__btn-play {
+		position: absolute;
+		top: 45%;
+		left: 44%;
+
+		:hover {
+			transform: scale(1.3);
+			transition: 0.5s all;
+		}
+	}
+	&__text-wrapper {
+		max-width: 580px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 40px;
+	}
+	&__h3-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	&__subtitle {
+		color: rgb(242, 190, 34);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 20px;
+		@media (max-width: 1024px) {
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+	&__h3 {
+		color: rgb(24, 18, 30);
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 120%;
+		@media (max-width: 1024px) {
+			font-size: 24px;
+		}
+	}
+	&__text {
+		color: rgb(24, 18, 30);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		@media (max-width: 1024px) {
+			font-size: 16px;
+		}
+	}
+	&__btn {
+		max-width: 200px;
+		padding: 16px 36px;
+		border-radius: 4px;
+		background: rgb(26, 62, 62);
+		color: rgb(253, 253, 253);
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 20px;
+		transition: 0.8s;
+		&:hover {
+			box-sizing: border-box;
+			border: 1px solid rgb(26, 62, 62);
+			border-radius: 4px;
+			background: rgb(253, 253, 253);
+			color: rgb(26, 62, 62);
+		}
+		@media (max-width: 1024px) {
+			top: 310px;
+			padding: 14px 20px;
+		}
+	}
+}
+
+// TODO кнопка плай
+
+.btn-play {
+	border-radius: 100px;
+	background: rgba(253, 253, 253, 0.6);
+	width: 50px;
+	height: 50px;
 }
