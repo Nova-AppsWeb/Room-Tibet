@@ -1,597 +1,729 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="fonts/stylesheet.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/stylesheet.css">
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="../css/output.css" />
+		<link rel="stylesheet" href="../css/output.css">
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="header__row">
-					<a class="header__logo" href="#"
-						><img src="img/logo.svg" alt="logo"
-					/></a>
-					<nav class="header__list-wrapper">
-						<ul class="header__list">
-							<li><a class="header__list-item" href="#">Главная</a></li>
-							<li><a class="header__list-item" href="#">Про гида</a></li>
-							<li><a class="header__list-item" href="#">Программа тура</a></li>
-							<li><a class="header__list-item" href="#">Стоимость</a></li>
-							<li><a class="header__list-item" href="#">Блог</a></li>
-							<li><a class="header__list-item" href="#">Контакты</a></li>
-						</ul>
-						<button class="header__btn">Консультация</button>
-					</nav>
-					<button class="mob-burger">
-						<img src="img/mob-btn.svg" alt="mob-menu" />
-					</button>
-				</div>
-				<div class="hero">
-					<h1 class="hero__h1">
-						Насладись прогулкой в горах с командой единомышленников
-					</h1>
-				</div>
-				<div class="hero__navigation">
-					<div class="hero__wrapper">
-						<form class="hero__form" action="">
-							<div class="hero__select">
-								<select class="hero__input" name="city" id="city-select">
-									<option class="hero__option" value="">
-										<span>Локация для тура</span>
-									</option>
-									<option class="hero__option" value="vladikavkaz">
-										Владткавказ
-									</option>
-									<option class="hero__option" value="sochi">Сочи</option>
-									<option class="hero__option" value="adygeya">Адыгея</option>
-								</select>
-								<label class="hero__lable" for="">выберите из списка</label>
-							</div>
-							<div class="hero__date-wrapper">
-								<div class="hero__date">
-									<input class="hero__input-date-one" type="date" />
-									<span class="date-button">
-										<button class="date-button__icon-date" type="button">
-											<img src="img/date-icon.svg" alt="" />
-										</button>
-									</span>
-									<input class="hero__input-date-two" type="date" />
-									<span class="date-button">
-										<button class="date-button__icon-date" type="button">
-											<img src="img/date-icon.svg" alt="" />
-										</button>
-									</span>
-								</div>
-								<label class="hero__lable" for="">укажите диапазон</label>
-							</div>
-							<div class="hero__select">
-								<select class="hero__input" name="user" id="user-select">
-									<option class="hero__option" value="">
-										<span>Участники</span>
-									</option>
-									<option class="hero__option" value="vladikavkaz">4</option>
-									<option class="hero__option" value="sochi">5</option>
-									<option class="hero__option" value="adygeya">6</option>
-									<option class="hero__option" value="adygeya">7</option>
-									<option class="hero__option" value="adygeya">8</option>
-								</select>
-								<label class="hero__lable" for="">минимум 4 человека</label>
-							</div>
-							<button class="hero__btn" type="submit">Найти программу</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="mobile-nav mob-menu">
-			<button class="close">x</button>
-			<ul class="mobile-nav__list">
-				<li>
-					<a class="mob-list" href="#"
-						><img src="../img/mob-icon.svg" alt="" />Про гида</a
-					>
-				</li>
-				<li>
-					<a class="mob-list" href="#!"
-						><img src="img/mob-icon.svg" alt="" />Программа тура</a
-					>
-				</li>
-				<li>
-					<a class="mob-list" href="#!"
-						><img src="img/mob-icon.svg" alt="" />Стоимость</a
-					>
-				</li>
-				<li>
-					<a class="mob-list" href="#!"
-						><img src="img/mob-icon.svg" alt="" />Блог</a
-					>
-				</li>
-				<li>
-					<a class="mob-list" href="#!"
-						><img src="img/mob-icon.svg" alt="" />Контакты</a
-					>
-				</li>
-			</ul>
-		</div>
-		<section>
-			<div class="container">
-				<div class="content">
-					<div class="content__video-wrapper">
-						<img class="content__img" src="img/content-img.svg" alt="" />
-						<div class="content__video-inner">
-							<!-- <video
-								class="content__video"
-								src="img/content-img.svg"
-								alt="video"
-								controls
-							></video> -->
-							<img class="content__img" src="img/content-img.svg" alt="" />
-							<!-- <button class="content__btn-play">
-								<img src="img/icon-play.svg" alt="" />
-							</button> -->
-							<a
-								href="https://www.youtube.com/watch?v=gwEIcIudXSg&ab_channel=varlamov"
-							>
-								<button class="btn-play content__btn-play">
-									<img class="content__img" src="img/play.svg" alt="" />
-								</button>
-							</a>
-						</div>
-					</div>
-					<div class="content__text-wrapper">
-						<div class="content__h3-wrapper">
-							<span class="content__subtitle">о нашем походе</span>
-							<h3 class="content__h3">
-								Исследуйте все горные массивы мира вместе с нами
-							</h3>
-						</div>
-						<div class="content__text">
-							Его корни уходят в один фрагмент классической латыни 45 года н.э.,
-							то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
-							латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-							самых странных слов в Lorem Ipsum, "consectetur"и занялся его
-							поисками в классической латинской литературе.
-						</div>
-						<button class="content__btn">Программа тура</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section__content-program">
-			<div class="container">
-				<div class="content-program">
-					<div class="content-program__info">
-						<div class="content__h3-wrapper">
-							<span class="content__subtitle">наше предложение</span>
-							<h3 class="content__h3">Лучшие программы для тебя</h3>
-						</div>
-						<div class="content__text">
-							Его корни уходят в один фрагмент классической латыни 45 года н.э.,
-							то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
-							латыни из колледжа.
-						</div>
-						<div class="content-program__program-wrapper">
-							<img src="img/icon-program-gid.svg" alt="" />
-							<div class="content-program__program">
-								<div class="content-program__program-h4">Опытный гид</div>
-								<div class="content-program__program-text">
-									Для современного мира базовый вектор развития предполагает
-									независимые способы реализации соответствующих условий
-									активизации.
-								</div>
-							</div>
-						</div>
-						<div class="content-program__program-wrapper">
-							<img src="img/icon-program-hike.svg" alt="" />
-							<div class="content-program__program">
-								<div class="content-program__program-h4">Безопасный поход</div>
-								<div class="content-program__program-text">
-									Для современного мира базовый вектор развития предполагает
-									независимые способы реализации соответствующих условий
-									активизации.
-								</div>
-							</div>
-						</div>
-						<div class="content-program__program-wrapper">
-							<img src="img/icon-program-prise.svg" alt="" />
-							<div class="content-program__program">
-								<div class="content-program__program-h4">Лояльные цены</div>
-								<div class="content-program__program-text">
-									Для современного мира базовый вектор развития предполагает
-									независимые способы реализации соответствующих условий
-									активизации.
-								</div>
-							</div>
-						</div>
-						<button class="content__btn content-program__btn">
-							Стоимость программ
-						</button>
-					</div>
-					<div class="content-program__img">
-						//TODO переделать блок
-						<!-- <div class=" w-[250px] h-[250px] object-cover">
-                    <img src="img/img-one.svg" alt="">
-                </div> -->
-						<img src="img/img-two.svg" alt="" />
-						<img src="img/img-three.svg" alt="" />
-						<img src="img/img-four.svg" alt="" />
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="container">
-				<div class="content-popular">
-					<div class="content__h3-wrapper">
-						<span class="content__subtitle content-popular__subtitle"
-							>по версии отдыхающих</span
-						>
-						<h3 class="content__h3">Популярные направления</h3>
-					</div>
-					<div class="content-popular__cards">
-						<div class="card-popular">
-							<div class="card-popular__main">
-								<div class="card-popular__image">
-									<img src="img/card-popular-one.svg" alt="" />
-								</div>
-								<div class="card-popular__info">
-									<div class="card-popular__row">
-										<div class="card-popular__wrapper">
-											<div class="card-popular__h4">Озеро возле гор</div>
-											<div class="card-popular__subtitle">
-												романтическое приключение
-											</div>
-										</div>
-										<div class="card-popular__prise">480 $</div>
-									</div>
-								</div>
-								<img
-									class="card-popular__img-one"
-									src="img/card-rating-one.svg"
-									alt=""
-								/>
-								<div class="card-popular__clue">
-									<div class="card-popular__info-clue">
-										<div class="card-popular__wrapper-clue">
-											<div class="card-popular__h4-clue">Озеро возле гор</div>
-											<div class="card-popular__subtitle-clue">
-												романтическое приключение
-											</div>
-										</div>
-										<div class="card-popular__prise-clue">480 $</div>
-									</div>
-									<div class="card-popular__text">
-										Его корни уходят в один фрагмент классической латыни 45 года
-										н.э., то есть более двух тысячелетий назад. Ричард
-										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-										штат Вирджиния, взял одно из самых странных слов в Lorem
-										Ipsum, "consectetur"и занялся его поисками в классической
-										латинской литературе.
-									</div>
-									<button class="content__btn card-popular__btn">
-										Программа тура
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="card-popular">
-							<div class="card-popular__main">
-								<div class="card-popular__image">
-									<img src="img/card-popular-two.svg" alt="" />
-								</div>
-								<div class="card-popular__info">
-									<div class="card-popular__row">
-										<div class="card-popular__wrapper">
-											<div class="card-popular__h4">Ночь в горах</div>
-											<div class="card-popular__subtitle">
-												в компании друзей
-											</div>
-										</div>
-										<div class="card-popular__prise">500 $</div>
-									</div>
-								</div>
-								<img
-									class="card-popular__img-one"
-									src="img/card-rating-two.svg"
-									alt=""
-								/>
-								<div class="card-popular__clue">
-									<div class="card-popular__info-clue">
-										<div class="card-popular__wrapper-clue">
-											<div class="card-popular__h4-clue">Ночь в горах</div>
-											<div class="card-popular__subtitle-clue">
-												в компании друзей
-											</div>
-										</div>
-										<div class="card-popular__prise-clue">500 $</div>
-									</div>
-									<div class="card-popular__text">
-										Его корни уходят в один фрагмент классической латыни 45 года
-										н.э., то есть более двух тысячелетий назад. Ричард
-										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-										штат Вирджиния, взял одно из самых странных слов в Lorem
-										Ipsum, "consectetur"и занялся его поисками в классической
-										латинской литературе.
-									</div>
-									<button class="content__btn card-popular__btn">
-										Программа тура
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="card-popular">
-							<div class="card-popular__main">
-								<div class="card-popular__image">
-									<img src="img/card-popular-three.svg" alt="" />
-								</div>
-								<div class="card-popular__info">
-									<div class="card-popular__row">
-										<div class="card-popular__wrapper">
-											<div class="card-popular__h4">Йога в горах</div>
-											<div class="card-popular__subtitle">
-												для тех, кто забоится о себе
-											</div>
-										</div>
-										<div class="card-popular__prise">230 $</div>
-									</div>
-								</div>
-								<img
-									class="card-popular__img-one"
-									src="img/card-rating-three.svg"
-									alt=""
-								/>
-								<div class="card-popular__clue">
-									<div class="card-popular__info-clue">
-										<div class="card-popular__wrapper-clue">
-											<div class="card-popular__h4-clue">Йога в горах</div>
-											<div class="card-popular__subtitle-clue">
-												для тех, кто забоится о себе
-											</div>
-										</div>
-										<div class="card-popular__prise-clue">230 $</div>
-									</div>
-									<div class="card-popular__text">
-										Его корни уходят в один фрагмент классической латыни 45 года
-										н.э., то есть более двух тысячелетий назад. Ричард
-										МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-										штат Вирджиния, взял одно из самых странных слов в Lorem
-										Ipsum, "consectetur"и занялся его поисками в классической
-										латинской литературе.
-									</div>
-									<button class="content__btn card-popular__btn">
-										Программа тура
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button class="content-popular__btn">Рейтинг направлений</button>
-				</div>
-			</div>
-		</section>
-		<section class="section__content-program">
-			<div class="container">
-				<div class="content-blog">
-					<div class="content__h3-wrapper">
-						<span class="content__subtitle content-blog__subtitle"
-							>делимся впечатлениями</span
-						>
-						<h3 class="content__h3">Блог о путешествиях</h3>
-					</div>
-					<div class="content-blog__slider">
-						<div class="container-full">
-							<div class="sliders">
-								<div class="slider-row">
-									<div class="swiper mySwiper">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="card-blog">
-													<img
-														class="card-blog__img"
-														src="img/card-blog-one.svg"
-														alt=""
-													/>
-													<div class="card-blog__info">
-														<h3 class="card-blog__h3">
-															Красивая Италия, какая она в реальности?
-														</h3>
-														<div class="card-blog__text">
-															Для современного мира базовый вектор развития
-															предполагает независимые способы реализации
-															соответствующих условий активизации.
-														</div>
-														<div class="card-blog__row">
-															<div class="card-blog__date">01/04/2023</div>
-															<button class="card-blog__btn">
-																читать статью
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="card-blog">
-													<img
-														class="card-blog__img"
-														src="img/card-blog-two.svg"
-														alt=""
-													/>
-													<div class="card-blog__info">
-														<h3 class="card-blog__h3">
-															Долой сомнения! Весь мир открыт для вас!
-														</h3>
-														<div class="card-blog__text card-blog__text-two">
-															Для современного мира базовый вектор развития
-															предполагает независимые способы реализации
-															соответствующих условий активизации ...
-															независимые способы реализации соответствующих
-															условий активизации ...Для современного мира
-															базовый вектор развития предполагает независимые
-															способы реализации соответствующих условий
-															активизации ... независимые способы реализации
-															соответствующих условий активизации ...
-														</div>
-														<div class="card-blog__row">
-															<div class="card-blog__date">01/04/2023</div>
-															<button class="card-blog__btn">
-																читать статью
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="card-blog">
-													<img
-														class="card-blog__img"
-														src="img/card-blog-three.svg"
-														alt=""
-													/>
-													<div class="card-blog__info">
-														<h3 class="card-blog__h3">
-															Как подготовиться к путешествию в одиночку?
-														</h3>
-														<div class="card-blog__text">
-															Для современного мира базовый вектор развития
-															предполагает.
-														</div>
-														<div class="card-blog__row">
-															<div class="card-blog__date">01/04/2023</div>
-															<button class="card-blog__btn">
-																читать статью
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="card-blog">
-													<img
-														class="card-blog__img"
-														src="img/card-blog-four.svg"
-														alt=""
-													/>
-													<div class="card-blog__info">
-														<h3 class="card-blog__h3">Индия ... летим?</h3>
-														<div class="card-blog__text">
-															Для современного мира базовый.
-														</div>
-														<div class="card-blog__row">
-															<div class="card-blog__date">01/04/2023</div>
-															<button class="card-blog__btn">
-																читать статью
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="slider-control-wrapper">
-									<div class="slider-control">
-										<div class="button-prev button__slider"></div>
-										<div class="button-next button__slider"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="content-blog__cards">
-						<div class="card-blog">
-							<img class="card-blog__img" src="img/card-blog-one.svg" alt="" />
-							<div class="card-blog__info">
-								<h3 class="card-blog__h3">
-									Красивая Италия, какая она в реальности?
-								</h3>
-								<div class="card-blog__text">
-									Для современного мира базовый вектор развития предполагает
-									независимые способы реализации соответствующих условий
-									активизации.
-								</div>
-								<div class="card-blog__row">
-									<div class="card-blog__date">01/04/2023</div>
-									<button class="card-blog__btn">читать статью</button>
-								</div>
-							</div>
-						</div>
-						<div class="card-blog">
-							<img class="card-blog__img" src="img/card-blog-two.svg" alt="" />
-							<div class="card-blog__info">
-								<h3 class="card-blog__h3">
-									Долой сомнения! Весь мир открыт для вас!
-								</h3>
-								<div class="card-blog__text card-blog__text-two">
-									Для современного мира базовый вектор развития предполагает
-									независимые способы реализации соответствующих условий
-									активизации ... независимые способы реализации соответствующих
-									условий активизации ...Для современного мира базовый вектор
-									развития предполагает независимые способы реализации
-									соответствующих условий активизации ... независимые способы
-									реализации соответствующих условий активизации ...
-								</div>
-								<div class="card-blog__row">
-									<div class="card-blog__date">01/04/2023</div>
-									<button class="card-blog__btn">читать статью</button>
-								</div>
-							</div>
-						</div>
-						<div class="card-blog">
-							<img
-								class="card-blog__img"
-								src="img/card-blog-three.svg"
-								alt=""
-							/>
-							<div class="card-blog__info">
-								<h3 class="card-blog__h3">
-									Как подготовиться к путешествию в одиночку?
-								</h3>
-								<div class="card-blog__text">
-									Для современного мира базовый вектор развития предполагает.
-								</div>
-								<div class="card-blog__row">
-									<div class="card-blog__date">01/04/2023</div>
-									<button class="card-blog__btn">читать статью</button>
-								</div>
-							</div>
-						</div>
-						<div class="card-blog">
-							<img class="card-blog__img" src="img/card-blog-four.svg" alt="" />
-							<div class="card-blog__info">
-								<h3 class="card-blog__h3">Индия ... летим?</h3>
-								<div class="card-blog__text">
-									Для современного мира базовый.
-								</div>
-								<div class="card-blog__row">
-									<div class="card-blog__date">01/04/2023</div>
-									<button class="card-blog__btn">читать статью</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button class="content__btn content-blog__btn">
-						Другие материалы
-					</button>
-				</div>
-			</div>
-			<div class="container-block">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-		</section>
+    <div class="container">
+        <div class="header__row">
+            <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+            <nav class="header__list-wrapper">
+                <ul class="header__list">
+                    <li><a class="header__list-item" href="#">Главная</a></li>
+                    <li><a class="header__list-item" href="#">Про гида</a></li>
+                    <li><a class="header__list-item" href="#">Программа тура</a></li>
+                    <li><a class="header__list-item" href="#">Стоимость</a></li>
+                    <li><a class="header__list-item" href="#">Блог</a></li>
+                    <li><a class="header__list-item" href="#">Контакты</a></li>
+                </ul>
+                <button class="header__btn">Консультация</button>
+            </nav>
+            <button class="mob-burger"><img src="img/mob-btn.svg" alt="mob-menu"></button>
+        </div>
+        <div class="hero">
+    <h1 class="hero__h1">Насладись прогулкой в горах
+        с командой единомышленников</h1>
+</div>
+<div class="hero__navigation">
+    <div class="hero__wrapper">
+        <form class="hero__form" action="">
+            <div class="hero__select">
+                <select class="hero__input" name="city" id="city-select">
+                    <option class="hero__option" value=""><span>Локация для тура</span> </option>
+                    <option class="hero__option" value="vladikavkaz">Владткавказ</option>
+                    <option class="hero__option" value="sochi">Сочи</option>
+                    <option class="hero__option" value="adygeya">Адыгея</option>
+                </select>
+                <label class="hero__lable" for="">выберите из списка</label>
+            </div>
+            <div class="hero__date-wrapper">
+                <div class="hero__date">
+                    <input class="hero__input-date-one" type="date">
+                    <span class="date-button">
+                        <button class="date-button__icon-date" type="button">
+                            <img src="img/date-icon.svg" alt="">
+                        </button>
+                      </span>
+                    <input class="hero__input-date-two" type="date">
+                    <span class="date-button">
+                        <button class="date-button__icon-date" type="button">
+                            <img src="img/date-icon.svg" alt="">
+                        </button>
+                      </span>
+                </div>
+                <label class="hero__lable" for="">укажите диапазон</label>
+            </div>
+            <div class="hero__select">
+                <select class="hero__input" name="user" id="user-select">
+                    <option class="hero__option" value=""><span>Участники</span> </option>
+                    <option class="hero__option" value="vladikavkaz">4</option>
+                    <option class="hero__option" value="sochi">5</option>
+                    <option class="hero__option" value="adygeya">6</option>
+                    <option class="hero__option" value="adygeya">7</option>
+                    <option class="hero__option" value="adygeya">8</option>
+                </select>
+                <label class="hero__lable" for="">минимум 4 человека</label>
+            </div>
+            <button class="hero__btn" type="submit">Найти программу</button>
+        </form>
+    </div>
+</div>
 
+
+
+    </div>
+</header>
+<div class="mobile-nav mob-menu">
+	<button class="close"><img src="img/close.svg" alt="close"></button>
+	<ul class="mobile-nav__list">
+		<li><a class="mob-list hover" href="#" ><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>Про гида</a></li>
+		<li><a class="mob-list hover" href="#!"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>Программа тура</a></li>
+		<li><a class="mob-list hover" href="#!"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>Стоимость</a></li>
+		<li><a class="mob-list hover" href="#!"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>Блог</a></li>
+		<li><a class="mob-list hover" href="#!"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>Контакты</a></li>
+	</ul>
+</div>
+		<section>
+    <div class="container">
+        <div class="content">
+            <div class="content__wrapper">
+                <div class="content__video-wrapper">
+                    <img class="content__img" src="img/content-img.svg" alt="content-img">
+                    <div class="content__video-inner">
+                        <img class="content__video" src="img/content-img3.svg" alt="content-video"></img>
+                        <button class="content__btn-play"><img src="img/play-video.svg" alt="play"></button>
+                    </div>
+                </div>
+                <div class="content__text-wrapper">
+                    <div class="content__h3-wrapper">
+                        <span class="content__subtitle">о нашем походе</span>
+                        <h3 class="content__h3">Исследуйте все горные массивы мира вместе с нами</h3>
+                    </div>
+                    <div class="content__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+                        то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, 
+                        штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                         "consectetur"и занялся его поисками в классической латинской литературе.
+                        </div>
+                    <button class="content__btn">Программа тура</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="section__content-program ">
+    <div class="container">
+        <div class="content-program">
+            <div class="content-program__info">
+                <div class="content__h3-wrapper">
+                    <span class="content__subtitle">наше предложение</span>
+                    <h3 class="content__h3">Лучшие программы для тебя</h3>
+                </div>
+                <div class="content__text">Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+                     то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</div>
+                    <div class="content-program__program-wrapper">
+                        <img src="img/icon-program-gid.svg" alt="">
+                        <div class="content-program__program">
+                            <div class="content-program__program-h4">Опытный гид</div>
+                            <div class="content-program__program-text">Для современного мира базовый
+                                 вектор развития предполагает независимые способы 
+                                реализации соответствующих условий активизации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-program__program-wrapper">
+                        <img src="img/icon-program-hike.svg" alt="">
+                        <div class="content-program__program">
+                            <div class="content-program__program-h4">Безопасный поход</div>
+                            <div class="content-program__program-text">Для современного мира базовый
+                                 вектор развития предполагает независимые способы
+                                  реализации соответствующих условий активизации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-program__program-wrapper">
+                        <img src="img/icon-program-prise.svg" alt="">
+                        <div class="content-program__program">
+                            <div class="content-program__program-h4">Лояльные цены</div>
+                            <div class="content-program__program-text">Для современного мира базовый
+                                 вектор развития предполагает независимые способы
+                                  реализации соответствующих условий активизации.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="content__btn content-program__btn">Стоимость программ</button>
+            </div>
+            <div class="content-program__img">
+                <div class="content-program__img-wrapper">
+                    <img src="img/img-one.svg" alt="">
+                </div>
+                <div class="content-program__img-wrapper">
+                    <img src="img/img-two.svg" alt="">
+                </div>
+                <div class="content-program__img-wrapper">
+                    <img src="img/img-three.svg" alt="">
+                </div>
+                <div class="content-program__img-wrapper">
+                    <img src="img/img-four.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section>
+    <div class="container">
+        <div class="content-popular">
+            <div class="content__h3-wrapper">
+                <span class="content__subtitle content-popular__subtitle">по версии отдыхающих</span>
+                <h3 class="content__h3">Популярные направления</h3>
+            </div>
+            <div class="content-popular__cards">
+                <div class="card-popular">
+    <div class="card-popular__main">
+        <div class="card-popular__image">
+            <img src="img/card-popular-one.svg" alt="">
+        </div>
+        <div class="card-popular__info">
+            <div class="card-popular__row">
+                <div class="card-popular__wrapper">
+                    <div class="card-popular__h4">Озеро возле гор</div>
+                    <div class="card-popular__subtitle">романтическое приключение</div>
+                </div>
+                <div class="card-popular__prise">480 $</div>
+            </div>
+        </div>
+        <img class="card-popular__img-one" src="img/card-rating-one.svg" alt="">
+        <div class="card-popular__clue">
+            <div class="card-popular__info-clue">
+                <div class="card-popular__wrapper-clue">
+                    <div class="card-popular__h4-clue">Озеро возле гор</div>
+                    <div class="card-popular__subtitle-clue">романтическое приключение</div>
+                </div>
+                <div class="card-popular__prise-clue">480 $</div>
+            </div>
+            <div class="card-popular__text">
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
+                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+            </div>
+            <button class="content__btn card-popular__btn">Программа тура</button>
+        </div>
+    </div>
+</div>
+                <div class="card-popular">
+    <div class="card-popular__main">
+        <div class="card-popular__image">
+            <img src="img/card-popular-two.svg" alt="">
+        </div>
+        <div class="card-popular__info">
+            <div class="card-popular__row">
+                <div class="card-popular__wrapper">
+                    <div class="card-popular__h4">Ночь в горах</div>
+                    <div class="card-popular__subtitle">в компании друзей</div>
+                </div>
+                <div class="card-popular__prise">500 $</div>
+            </div>
+        </div>
+        <img class="card-popular__img-one" src="img/card-rating-two.svg" alt="">
+        <div class="card-popular__clue">
+            <div class="card-popular__info-clue">
+                <div class="card-popular__wrapper-clue">
+                    <div class="card-popular__h4-clue">Ночь в горах</div>
+                    <div class="card-popular__subtitle-clue">в компании друзей</div>
+                </div>
+                <div class="card-popular__prise-clue">500 $</div>
+            </div>
+            <div class="card-popular__text">
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
+                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+            </div>
+            <button class="content__btn card-popular__btn">Программа тура</button>
+        </div>
+    </div>
+</div>
+                <div class="card-popular">
+    <div class="card-popular__main">
+        <div class="card-popular__image">
+            <img src="img/card-popular-three.svg" alt="">
+        </div>
+        <div class="card-popular__info">
+            <div class="card-popular__row">
+                <div class="card-popular__wrapper">
+                    <div class="card-popular__h4">Йога в горах</div>
+                    <div class="card-popular__subtitle">для тех, кто забоится о себе</div>
+                </div>
+                <div class="card-popular__prise">230 $</div>
+            </div>
+        </div>
+        <img class="card-popular__img-one" src="img/card-rating-three.svg" alt="">
+        <div class="card-popular__clue">
+            <div class="card-popular__info-clue">
+                <div class="card-popular__wrapper-clue">
+                    <div class="card-popular__h4-clue">Йога в горах</div>
+                    <div class="card-popular__subtitle-clue">для тех, кто забоится о себе</div>
+                </div>
+                <div class="card-popular__prise-clue">230 $</div>
+            </div>
+            <div class="card-popular__text">
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+                то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
+                 колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+                  Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+            </div>
+            <button class="content__btn card-popular__btn">Программа тура</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <button class="content-popular__btn">Рейтинг направлений</button>
+        </div>
+    </div>
+</section>
+		<section class="section__content-program ">
+    <div class="container">
+        <div class="content-blog">
+            <div class="content__h3-wrapper">
+                <span class="content__subtitle content-blog__subtitle">делимся впечатлениями</span>
+                <h3 class="content__h3">Блог о путешествиях</h3>
+            </div>
+            <div class="content-blog__slider">
+	<div class="container-full">
+		<div class="sliders">
+			<div class="slider-row">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-one.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Красивая Италия, какая она в реальности?</h3>
+        <div class="card-blog__text">Для современного мира базовый вектор развития 
+            предполагает независимые способы реализации соответствующих условий активизации.
+        </div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div></div>
+						<div class="swiper-slide"><div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-two.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Долой сомнения! Весь мир открыт для вас!</h3>
+        <div class="card-blog__text card-blog__text-two">Для современного мира базовый вектор развития предполагает независимые способы 
+            реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации
+             ...Для современного мира базовый вектор развития
+             предполагает независимые способы реализации соответствующих условий
+              активизации ... независимые способы реализации соответствующих условий активизации ...
+        </div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div></div>
+						<div class="swiper-slide"><div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-three.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Как подготовиться к путешествию в одиночку? </h3>
+        <div class="card-blog__text">Для современного мира базовый вектор развития предполагает.</div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div></div>
+                        <div class="swiper-slide"><div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-four.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Индия ... летим?</h3>
+        <div class="card-blog__text">Для современного мира базовый.</div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div></div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-control-wrapper">
+				<div class="slider-control">
+					<div class="button-prev button__slider"></div>
+					<div class="button-next button__slider"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+            <div class="content-blog__cards">
+                <div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-one.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Красивая Италия, какая она в реальности?</h3>
+        <div class="card-blog__text">Для современного мира базовый вектор развития 
+            предполагает независимые способы реализации соответствующих условий активизации.
+        </div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div>
+                <div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-two.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Долой сомнения! Весь мир открыт для вас!</h3>
+        <div class="card-blog__text card-blog__text-two">Для современного мира базовый вектор развития предполагает независимые способы 
+            реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации
+             ...Для современного мира базовый вектор развития
+             предполагает независимые способы реализации соответствующих условий
+              активизации ... независимые способы реализации соответствующих условий активизации ...
+        </div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div>
+                <div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-three.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Как подготовиться к путешествию в одиночку? </h3>
+        <div class="card-blog__text">Для современного мира базовый вектор развития предполагает.</div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div>
+                <div class="card-blog">
+    <img class="card-blog__img" src="img/card-blog-four.svg" alt="">
+    <div class="card-blog__info">
+        <h3 class="card-blog__h3">Индия ... летим?</h3>
+        <div class="card-blog__text">Для современного мира базовый.</div>
+        <div class="card-blog__row">
+            <div class="card-blog__date">01/04/2023</div>
+            <button class="card-blog__btn">читать статью</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <button class="content__btn content-blog__btn">Другие материалы</button>
+        </div>
+    </div>
+</section>
+		<section>
+    <div class="container">
+        <div class="content-photo">
+            <div class="content-photo__wrapper">
+                <div class="content__h3-wrapper">
+                    <span class="content__subtitle content-photo__subtitle">фото-отчет</span>
+                    <h3 class="content__h3">Делимся впечатлениями</h3>
+                </div>
+                <div class="content-photo__photos">
+                    <div class="content-photo__img content-photo__img-one">
+                        <img class="photo" src="img/Rectangle 20.png" alt="photo">
+                    </div>
+                    <div class="content-photo__img">
+                        <img class="photo" src="img/photo2.svg" alt="photo">
+                    </div>
+                    <div class="content-photo__img">
+                        <img class="photo" src="img/photo3.svg" alt="photo">
+                    </div>
+                    <div class="content-photo__img">
+                        <img class="photo" src="img/photo4.svg" alt="photo">
+                    </div>
+                    <div class="content-photo__img content-photo__img-two">
+                        <img class="photo" src="img/Rectangle 23.png" alt="photo">
+                    </div>
+                    <div class="content-photo__img">
+                        <img class="photo" src="img/photo6.svg" alt="photo">
+                    </div>
+                </div>
+            </div>
+            <button class="content__btn">Наш pinterest</button>
+        </div>
+    </div>
+</section>
+		
+		<section>
+    <div class="container">
+        <div class="form-media__wrapper">
+            <div class="form-media">
+                <div class="form__h4-wrapper">
+                    <h4 class="form__subtitle">актуально</h4>
+                    <div class="form__h4">Получайте полезные рассылки о путешествиях</div>
+                </div>
+                <div class="form__form-wrapper">
+                    <h4 class="form__form-h4">Введите e-mail адрес</h4>
+                    <form class="form__form" action="email">
+                        <input class="form__input" type="email" placeholder="name@domain.com">
+                        <button class="content__btn form__btn">Подписаться на новости</button>
+                    </form>
+                </div>
+                <div class="form__text">подписываясь на новости, вы автоматически соглашаетесь с 
+                    <a  href="#"><span class="form__link">условиями обработки персональных данных</span></a> и 
+                    <a  href="#"><span class="form__link">правилами рекламных рассылок</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<footer class="footer">
+	<section>
+    <div class="container">
+        <div class="form">
+            <div class="form__h4-wrapper">
+                <h4 class="form__subtitle">актуально</h4>
+                <div class="form__h4">Получайте полезные рассылки о путешествиях</div>
+            </div>
+            <div class="form__form-wrapper">
+                <h4 class="form__form-h4">Введите e-mail адрес</h4>
+                <form class="form__form" action="email">
+                    <input class="form__input" type="email" placeholder="name@domain.com">
+                    <button class="content__btn form__btn">Подписаться на новости</button>
+                </form>
+                <div class="form__text">подписываясь на новости, вы автоматически соглашаетесь с 
+                    <a  href="#"><span class="form__link">условиями обработки персональных данных</span></a> и 
+                    <a  href="#"><span class="form__link">правилами рекламных рассылок</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__info">
+				<div class="footer__text-wrapper">
+					<h4 class="footer__h4">Компания «РумТибет»</h4>
+					<div class="footer__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+						 более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+						</div>
+				</div>
+				<div class="footer__social">
+					<div class="footer__contacts">
+						<span class="footer__contact">info@domain.com</span>
+						<span class="footer__contact">+7 (123) 456-78-90</span>
+					</div>
+					<div class="footer__social-icon">
+						<div class="icon-footer">
+    <a href="#">
+        <svg width="27.000000" height="27.000000" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path class="icon-footer__img-telegram" id="Vector" d="M13 -0.34C5.63 -0.34 -0.34 5.63 -0.34 12.99C-0.34 20.35 5.63 26.33 13 26.33C20.36 26.33 26.33 20.35 26.33 12.99C26.33 5.63 20.36 -0.34 13 -0.34ZM19.18 8.73C18.98 10.83 18.12 15.96 17.68 18.31C17.49 19.31 17.12 19.65 16.77 19.69C16 19.75 15.41 19.18 14.66 18.69C13.49 17.91 12.82 17.43 11.69 16.69C10.37 15.82 11.22 15.34 11.98 14.57C12.18 14.37 15.6 11.26 15.66 10.98C15.67 10.94 15.67 10.9 15.66 10.85C15.65 10.81 15.62 10.77 15.6 10.74C15.52 10.67 15.41 10.7 15.32 10.71C15.2 10.74 13.33 11.98 9.69 14.43C9.16 14.79 8.67 14.98 8.25 14.97C7.77 14.96 6.86 14.7 6.18 14.47C5.34 14.21 4.69 14.06 4.74 13.59C4.77 13.35 5.1 13.11 5.73 12.86C9.62 11.17 12.21 10.05 13.5 9.51C17.21 7.97 17.97 7.7 18.48 7.7C18.58 7.7 18.84 7.73 19 7.86C19.13 7.97 19.17 8.11 19.18 8.22C19.17 8.3 19.2 8.54 19.18 8.73Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="27.000000" height="27.000000" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path class="icon-footer__img-vk" id="Vector" d="M13.36 0C5.98 0 0 5.98 0 13.36C0 20.73 5.98 26.72 13.36 26.72C20.73 26.72 26.72 20.73 26.72 13.36C26.72 5.98 20.73 0 13.36 0ZM18.49 15.07C18.49 15.07 19.67 16.23 19.97 16.78C19.97 16.79 19.98 16.8 19.98 16.8C20.1 17 20.13 17.16 20.07 17.27C19.97 17.46 19.64 17.56 19.52 17.57L17.44 17.57C17.29 17.57 16.99 17.53 16.62 17.28C16.34 17.08 16.06 16.75 15.79 16.44C15.38 15.97 15.03 15.56 14.68 15.56C14.63 15.56 14.59 15.57 14.55 15.58C14.28 15.67 13.94 16.05 13.94 17.07C13.94 17.38 13.69 17.57 13.51 17.57L12.55 17.57C12.23 17.57 10.53 17.45 9.03 15.87C7.19 13.93 5.53 10.03 5.52 10C5.41 9.74 5.63 9.61 5.87 9.61L7.97 9.61C8.25 9.61 8.35 9.78 8.41 9.93C8.49 10.11 8.76 10.81 9.21 11.6C9.95 12.89 10.4 13.41 10.76 13.41C10.82 13.41 10.89 13.4 10.95 13.36C11.42 13.1 11.33 11.42 11.31 11.08C11.31 11.01 11.31 10.33 11.07 10C10.9 9.76 10.6 9.67 10.43 9.64C10.5 9.54 10.59 9.46 10.7 9.4C11.03 9.24 11.61 9.22 12.18 9.22L12.51 9.22C13.13 9.22 13.29 9.26 13.52 9.32C13.98 9.43 13.99 9.73 13.95 10.74C13.94 11.03 13.92 11.36 13.92 11.74C13.92 11.82 13.92 11.91 13.92 12.01C13.91 12.52 13.89 13.11 14.25 13.35C14.3 13.38 14.36 13.4 14.41 13.4C14.54 13.4 14.92 13.4 15.95 11.63C16.27 11.05 16.55 10.46 16.78 9.85C16.8 9.82 16.86 9.7 16.94 9.66C16.99 9.63 17.05 9.62 17.11 9.62L19.59 9.62C19.86 9.62 20.04 9.66 20.08 9.77C20.14 9.93 20.07 10.44 18.93 11.97L18.43 12.64C17.4 13.98 17.4 14.05 18.49 15.07Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="27.000000" height="27.000000" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path class="icon-footer__img-p" id="Vector" d="M9.05 25.71C10.33 26.1 11.62 26.33 13 26.33C16.53 26.33 19.92 24.92 22.42 22.42C24.92 19.92 26.33 16.53 26.33 12.99C26.33 11.24 25.98 9.51 25.31 7.89C24.64 6.27 23.66 4.8 22.42 3.57C21.19 2.33 19.72 1.35 18.1 0.68C16.48 0.01 14.75 -0.34 13 -0.34C11.24 -0.34 9.51 0.01 7.89 0.68C6.27 1.35 4.81 2.33 3.57 3.57C1.07 6.07 -0.34 9.46 -0.34 12.99C-0.34 18.66 3.22 23.53 8.25 25.45C8.13 24.41 8.01 22.69 8.25 21.5L9.78 14.91C9.78 14.91 9.39 14.14 9.39 12.91C9.39 11.07 10.54 9.7 11.85 9.7C13 9.7 13.53 10.54 13.53 11.62C13.53 12.77 12.77 14.41 12.38 15.98C12.16 17.29 13.08 18.43 14.41 18.43C16.78 18.43 18.62 15.9 18.62 12.33C18.62 9.13 16.33 6.94 13.04 6.94C9.28 6.94 7.06 9.74 7.06 12.69C7.06 13.83 7.43 14.99 8.05 15.75C8.17 15.83 8.17 15.94 8.13 16.14L7.74 17.59C7.74 17.82 7.59 17.9 7.37 17.74C5.66 16.99 4.67 14.57 4.67 12.61C4.67 8.39 7.66 4.57 13.42 4.57C18.01 4.57 21.58 7.86 21.58 12.23C21.58 16.82 18.74 20.5 14.68 20.5C13.38 20.5 12.12 19.81 11.66 18.99L10.77 22.15C10.46 23.3 9.62 24.83 9.05 25.75L9.05 25.71Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path class="icon-footer__img-s" id="Vector" d="M20 4C22.76 6.71 23.8 10.52 23.14 14.06C23.69 15.02 24 16.14 24 17.33C24 19.1 23.29 20.79 22.04 22.04C20.79 23.29 19.1 24 17.33 24C16.14 24 15.02 23.69 14.06 23.14C10.52 23.8 6.72 22.76 4 20C1.24 17.28 0.19 13.48 0.85 9.93C0.3 8.97 0 7.85 0 6.66C0 4.89 0.7 3.2 1.95 1.95C3.2 0.7 4.89 0 6.66 0C7.85 0 8.97 0.3 9.93 0.85C13.48 0.19 17.28 1.23 20 4ZM12.05 18.87C15.88 18.87 17.78 17.04 17.78 14.56C17.78 12.97 17.04 11.28 14.14 10.62L11.49 10.04C10.48 9.81 9.33 9.5 9.33 8.56C9.33 7.6 10.13 6.93 11.6 6.93C14.57 6.93 14.29 8.97 15.77 8.97C16.54 8.97 17.21 8.52 17.21 7.73C17.21 5.9 14.29 4.53 11.81 4.53C9.13 4.53 6.26 5.67 6.26 8.71C6.26 10.18 6.78 11.74 9.66 12.46L13.25 13.37C14.33 13.63 14.6 14.24 14.6 14.8C14.6 15.7 13.69 16.6 12.05 16.6C8.84 16.6 9.28 14.13 7.56 14.13C6.78 14.13 6.22 14.66 6.22 15.42C6.22 16.9 8 18.87 12.05 18.87Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+    </a>
+</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__wrapper-two">
+				<div class="footer__services">
+					<h4 class="footer__h4">Наши услуги</h4>
+					<ul class="footer__list">
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Прогулки в горы летом
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Зимние походы в горы
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Посещение храмов в горах
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Экстремальные виды туризма
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Походы в джунглях Амазонии
+								<div class="new">NEW</div>
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Поездка в Африку
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__important">
+					<h4 class="footer__h4">Важно для путешествий</h4>
+					<ul class="footer__list footer__list-important">
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Как собрать в долгий поход?
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Жизненно важные предметы для похода
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Медицинская страховка, гарантии безопасности
+							</a>
+						</li>
+						<li>
+							<a class="footer__item hover" href="#"><svg  width="6.000000" height="10.000000" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path class="icon" id="Vector" d="M5.71 4.6L1.26 0.15C1.16 0.05 1.02 0 0.87 0C0.73 0 0.59 0.05 0.49 0.15L0.16 0.48C-0.05 0.7 -0.05 1.04 0.16 1.26L3.9 4.99L0.15 8.73C0.05 8.84 0 8.97 0 9.12C0 9.27 0.05 9.4 0.15 9.51L0.48 9.84C0.59 9.94 0.72 10 0.87 10C1.02 10 1.15 9.94 1.26 9.84L5.71 5.38C5.81 5.28 5.87 5.14 5.87 4.99C5.87 4.85 5.81 4.71 5.71 4.6Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+								Если вы врач - загляните сюда
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<section class="copywriting">
+        <div class="container">
+            <div class="copywriting__wrapper">
+                <div class="copywriting__text">Клюшникова А. В., 2024</div>
+                <button><span class="copywriting__text copywriting__text-style">Политика обработки персональных данных</span></button>
+            </div>
+        </div>
+</section>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

@@ -1,14 +1,112 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
-
-	h1 {
-		font-size: 32px;
+	background: rgb(26, 62, 62);
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-family: var(--font-main);
+	&__wrapper {
+		padding-top: 178px;
+		padding-bottom: 80px;
+		display: flex;
+		gap: 44px;
+		align-items: flex-start;
+		@media (max-width: 1177px) {
+			padding-top: 50px;
+			padding-bottom: 80px;
+		}
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			gap: 50px;
+		}
 	}
-
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+		max-width: 456px;
 	}
+	&__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 17px;
+	}
+	&__h4 {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+	&__text {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	&__social {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+	}
+	&__contacts {
+		display: flex;
+		gap: 24px;
+	}
+	&__contact {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 18px;
+		text-decoration-line: underline;
+		cursor: pointer;
+		transition: 0.5s;
+		&:hover {
+			color: rgb(242, 190, 34);
+		}
+	}
+	&__wrapper-two {
+		display: flex;
+		gap: 120px;
+		align-items: flex-start;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+	&__services {
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	&__list-important {
+		max-width: 280px;
+	}
+	&__item {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		transition: 0.5s;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__important {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+.new {
+	border-radius: 4px;
+	background: rgb(255, 255, 255);
+	color: rgb(26, 62, 62);
+	padding: 2px 10px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 16px;
+	text-transform: lowercase;
 }

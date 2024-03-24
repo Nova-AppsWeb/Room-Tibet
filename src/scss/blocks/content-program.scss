@@ -55,9 +55,11 @@
 		@media (max-width: 1024px) {
 			display: none;
 		}
-		//  &__:nth-child(even){
-		//     border-top-right-radius: 50px;
-
-		//  }
+	
 	}
+	&__img-wrapper {
+		&__:nth-child(even){
+		 border-top-right-radius: 50px;
+	}
+}
 }

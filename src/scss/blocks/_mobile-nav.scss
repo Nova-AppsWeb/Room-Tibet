@@ -12,6 +12,7 @@
 
 .mob-list {
 	display: flex;
+	font-size: 14px;
 	align-items: center;
 	gap: 10px;
 	transition: 0.3s;
@@ -60,4 +61,10 @@
 	@media (max-width: 1024px) {
 		display: block;
 	}
+}
+
+.close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
 }

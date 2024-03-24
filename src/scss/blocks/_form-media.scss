@@ -1,0 +1,18 @@
+.form-media {
+    display: none;
+    @media (max-width: 1177px) {
+        display: block;
+        border-radius: 6px;
+        box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
+        background: rgb(253, 253, 253);
+        font-family: var(--font-main);
+        display: flex;
+        gap: 18px;
+        padding: 24px;
+        flex-direction: column;
+    }
+    &__wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,33 @@
+.icon-footer {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    &__img-telegram {
+        fill: white;
+        transition: 0.5s;
+        &:hover {
+            fill:  #0088cc;
+        }
+    }
+    &__img-vk {
+        fill: white;
+        transition: 0.5s;
+        &:hover {
+            fill:  #4C75A3;
+        }
+    }
+    &__img-p {
+        fill: white;
+        transition: 0.5s;
+        &:hover {
+            fill:  #BD081C;
+        } 
+    }
+    &__img-s {
+        fill: white;
+        transition: 0.5s;
+        &:hover {
+            fill:  #00aff0;
+        } 
+    }
+}

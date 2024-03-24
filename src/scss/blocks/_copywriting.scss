@@ -1,0 +1,28 @@
+.copywriting {
+    background: black;
+    &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0; 
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        padding: 20px 0; 
+    }
+    }
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: var(--font-main);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+    &__text-style {
+        text-decoration-line: underline;
+        transition: 0.8s;
+        &:hover {
+			color: rgb(242, 190, 34);
+		}
+    }
+}

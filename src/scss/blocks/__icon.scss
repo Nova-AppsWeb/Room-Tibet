@@ -1,0 +1,11 @@
+.hover {
+    fill: white;
+    position: relative;
+    z-index: 1000;
+    transition: fill 0.3s ease;
+    &:hover {
+        fill: rgb(242, 190, 34);
+        color: rgb(242, 190, 34);
+        transition: fill 0.3s ease;
+    }
+}
