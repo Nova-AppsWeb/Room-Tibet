@@ -1,0 +1,20 @@
+.photo__slider {
+    display: none;
+    @media (max-width: 1220px) {
+        display: block;
+    }
+}
+
+.mySwiper1 {
+    max-width: 500px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    max-width: 250px;
+    height: 250px;
+}
