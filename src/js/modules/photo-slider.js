@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 var swiper = new Swiper('.mySwiper1', {
 	modules: [Navigation],
 	slidesPerView: 1,
-	spaceBetween: 10,
+	spaceBetween: 20,
 	centeredSlides: false,
 	navigation: {
 		nextEl: '.button-next',

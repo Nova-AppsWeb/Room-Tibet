@@ -2,19 +2,22 @@
     display: none;
     @media (max-width: 1220px) {
         display: block;
+        margin: 0 auto;
     }
 }
-
-.mySwiper1 {
-    max-width: 500px;
+.container-full-photo {
+    max-width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.slider-row-photo {
+	width: 100%;
 }
 
-.swiper-wrapper {
-    display: flex;
-    justify-content: center;
+.swiper-photo {
+	width: 100%;
 }
 
-.swiper-slide {
-    max-width: 250px;
-    height: 250px;
+.content-photo__img {
+    margin: 0 auto;
 }

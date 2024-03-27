@@ -1,21 +1,25 @@
 <header class="header">
-    <div class="container">
-        <div class="header__row">
-            <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
-            <nav class="header__list-wrapper">
-                <ul class="header__list">
-                    <li><a class="header__list-item" href="#">Главная</a></li>
-                    <li><a class="header__list-item" href="#">Про гида</a></li>
-                    <li><a class="header__list-item" href="#">Программа тура</a></li>
-                    <li><a class="header__list-item" href="#">Стоимость</a></li>
-                    <li><a class="header__list-item" href="#">Блог</a></li>
-                    <li><a class="header__list-item" href="#">Контакты</a></li>
-                </ul>
-                <button class="header__btn">Консультация</button>
-            </nav>
-            <button class="mob-burger"><img src="img/mob-btn.svg" alt="mob-menu"></button>
-        </div>
-        @@include('hero.html')
-    </div>
+	<div class="container">
+		<div class="header__row">
+			<a class="header__logo" href="#"><img src="img/logo.svg" alt="logo" /></a>
+			<nav class="header__list-wrapper">
+				<ul class="header__list">
+					<li><a class="header__list-item" href="#">Главная</a></li>
+					<li><a class="header__list-item" href="#">Про гида</a></li>
+					<li><a class="header__list-item" href="#">Программа тура</a></li>
+					<li><a class="header__list-item" href="#">Стоимость</a></li>
+					<li><a class="header__list-item" href="#">Блог</a></li>
+					<li><a class="header__list-item" href="#">Контакты</a></li>
+				</ul>
+				<button class="header__btn btn btn-primary btn-primary--green">
+					Консультация
+				</button>
+			</nav>
+			<button class="mob-burger">
+				<img src="img/mob-btn.svg" alt="mob-menu" />
+			</button>
+		</div>
+		@@include('hero.html')
+	</div>
 </header>
 @@include('mobile-nav.html')
