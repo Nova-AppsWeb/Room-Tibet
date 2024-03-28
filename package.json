@@ -28,10 +28,7 @@
 		"sass": "^1.63.6",
 		"style-loader": "^3.3.3",
 		"tailwindcss": "^3.4.1",
-		"webpack-stream": "^7.0.0",
-		"predeploy": "rm -rf build && npm run build",
-		"deploy": "gh-pages -d build",
-		"homepage": "https://github.com/AnzhelikaKlyushnikova/Room-Tibet-Demo.git"
+		"webpack-stream": "^7.0.0"
 	},
 	"babel": {
 		"presets": [
