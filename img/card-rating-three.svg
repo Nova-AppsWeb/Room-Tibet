@@ -1,0 +1,26 @@
+<svg width="65.000000" height="32.000000" viewBox="0 0 65 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_49_294_dd" x="0.000000" y="0.000000" width="65.000000" height="32.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="1.33333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<clipPath id="clip49_291">
+			<rect id="ic:round-star" width="24.000000" height="24.000000" transform="translate(8.000000 4.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_49_294_dd)">
+		<g filter="url(#filter_49_294_dd)">
+			<path id="рейтинг" d="M4 0L65 0L65 32L4 32C1.79 32 0 30.2 0 28L0 4C0 1.79 1.79 0 4 0Z" fill="#FDFDFD" fill-opacity="0.400000" fill-rule="evenodd"/>
+		</g>
+		<rect id="ic:round-star" width="24.000000" height="24.000000" transform="translate(8.000000 4.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip49_291)">
+			<path id="Vector" d="M20 21.27L24.15 23.78C24.91 24.24 25.84 23.56 25.64 22.7L24.54 17.98L28.21 14.8C28.88 14.22 28.52 13.12 27.64 13.05L22.81 12.64L20.92 8.18C20.58 7.37 19.42 7.37 19.08 8.18L17.19 12.63L12.36 13.04C11.48 13.11 11.12 14.21 11.79 14.79L15.46 17.96L14.36 22.69C14.16 23.55 15.09 24.23 15.85 23.77L20 21.27Z" fill="#F2BE22" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="4.9" d="M49.39 19.43C50 20.3 50.9 20.74 52.06 20.74Q53.11 20.74 53.86 20.27Q54.37 19.95 54.74 19.43C55.35 18.54 55.66 17.27 55.66 15.63Q55.66 13.17 54.74 11.88C54.13 11.02 53.24 10.59 52.06 10.59Q50.98 10.59 50.22 11.08Q49.74 11.39 49.39 11.88Q48.46 13.17 48.46 15.65Q48.46 18.1 49.39 19.43ZM38.4 20.45C39.01 20.64 39.64 20.74 40.28 20.74Q41.39 20.74 42.18 20.34C42.72 20.06 43.14 19.67 43.43 19.19C43.72 18.69 43.86 18.12 43.86 17.48Q43.86 16.54 43.47 15.84Q43.27 15.47 42.99 15.18Q42.73 14.92 42.39 14.74C41.94 14.46 41.39 14.33 40.77 14.33Q39.85 14.33 39.18 14.73Q39.06 14.8 38.95 14.89L38.95 12.22L43.26 12.22L43.26 10.73L37.2 10.73L37.2 16.74L38.4 16.74C38.92 16.11 39.57 15.8 40.35 15.8Q41.01 15.8 41.44 16.11Q41.55 16.19 41.65 16.29C41.97 16.61 42.13 17.03 42.13 17.55Q42.13 18.07 41.89 18.45Q41.78 18.63 41.62 18.78C41.3 19.08 40.84 19.23 40.25 19.23Q39.83 19.23 39.42 19.15Q38.41 18.95 37.51 18.25L36.92 19.62Q37.49 20.14 38.4 20.45ZM53.46 18.4C53.16 18.98 52.7 19.27 52.06 19.27Q51.63 19.27 51.31 19.09Q50.91 18.88 50.66 18.4C50.35 17.82 50.2 16.89 50.2 15.63Q50.2 13.76 50.66 12.92C50.97 12.35 51.44 12.06 52.06 12.06C52.7 12.06 53.16 12.35 53.46 12.92C53.77 13.48 53.92 14.38 53.92 15.63Q53.92 17.52 53.46 18.4ZM45.15 18.66L45.15 20.6L47.11 20.6L47.11 18.66L45.15 18.66Z" fill="#1A3E3E" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
